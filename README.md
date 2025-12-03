@@ -57,4 +57,4 @@ Cancellation Rate = DIVIDE([Canceled Bookings], [Total Bookings])
 ```
 
 ## 📬 Contact
-For more projects: *Your Name* | Data Analyst Portfolio  
+For more projects: *Gaurav Pandwar*  
