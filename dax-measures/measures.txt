@@ -1,0 +1,36 @@
+# 📘 DAX Measures Used
+
+**Total Bookings**
+```
+Total Bookings = COUNT('Bookings'[BookingID])
+```
+
+**Success Bookings**
+```
+Success Bookings = CALCULATE([Total Bookings], 'Bookings'[Status] = "Success")
+```
+
+**Canceled Bookings**
+```
+Canceled Bookings = CALCULATE([Total Bookings], 'Bookings'[Status] = "Canceled")
+```
+
+**Cancellation Rate**
+```
+Cancellation Rate = DIVIDE([Canceled Bookings], [Total Bookings])
+```
+
+**Total Booking Value**
+```
+Total Booking Value = SUM('Bookings'[BookingValue])
+```
+
+**Average Customer Rating**
+```
+Avg Customer Rating = AVERAGE('Ratings'[CustomerRating])
+```
+
+**Average Driver Rating**
+```
+Avg Driver Rating = AVERAGE('Ratings'[DriverRating])
+```
